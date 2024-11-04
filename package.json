@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.4",
-    "nuxt": "^3.13.2",
-    "pnpm": "^9.12.3"
+    "nuxt": "^3.13.2"
   },
   "packageManager": "pnpm@9.12.3"
 }
