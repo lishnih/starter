@@ -6,7 +6,6 @@ export default defineAppConfig({
   site: {
     name: "name",
     description: "description",
-    url: "https://auth.net.ru",
     favicon: {
       image: "/favicon.ico"
     },
