@@ -1,5 +1,5 @@
 # START nuxt-robots (indexable)
 User-agent: *
 
-Sitemap: https://auth.net.ru/sitemap.xml
+Sitemap: http://localhost:3000/sitemap.xml
 # END nuxt-robots
