@@ -1,3 +1,4 @@
+
 name: studio-nuxt-build
 run-name: studio nuxt build
 
@@ -67,8 +68,9 @@ jobs:
         run: npx nuxi build --preset github_pages
         env:
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
-          YANDEX_CLIENT_ID: ${{ secrets.YANDEX_CLIENT_ID }}
-          YANDEX_CLIENT_REDIRECT: ${{ secrets.YANDEX_CLIENT_REDIRECT }}
+          NUXT_PUBLIC_SITE_URL: ${{ secrets.NUXT_PUBLIC_SITE_URL }}
+YANDEX_CLIENT_ID: ${{ secrets.YANDEX_CLIENT_ID }}
+YANDEX_CLIENT_REDIRECT: ${{ secrets.YANDEX_CLIENT_REDIRECT }}
 
       # Deployment job
       - name: Deploy 🚀
