@@ -15,7 +15,4 @@ Useful links:
 [Index](/)
 
 [/about](/about)
-
-http://localhost:3000/_tailwind/
-
 ---
