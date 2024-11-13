@@ -1,4 +1,8 @@
 # About Content v2
 
+
 [Back home](/)
-[debug](/debug)
+
+[/debug](/debug)
+
+[/suggest/token.html](/suggest/token.html)
