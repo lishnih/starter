@@ -1,11 +1,9 @@
 <script setup lang="ts">
 
 const nuxtApp = useNuxtApp();
-const mounted = ref(false);
 
-nuxtApp.hook('app:mounted', () => {
-  mounted.value = true;
-});
+const loaded = ref(false);
+nuxtApp.hook('page:loading:end', () => loaded.value = true );
 
 const shown = reactive([]);
 
@@ -34,8 +32,8 @@ const remove = (shown, obj) => {
     <AppHeaderColorSelector class="ml-auto" />
 
     <div class="p-3">
-      <h1 class="text-indigo-500" @click="console.log(shown)">mounted</h1>
-      <Dict :obj="mounted" />
+      <h1 class="text-indigo-500" @click="console.log(shown)">loaded</h1>
+      {{ loaded }}
     </div>
 
     <div class="p-3">

@@ -2,15 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  app: {
-    head: {
-//       link: [
-//         { rel: "stylesheet", href: "base.css" },
-//       ],
-//       script: [{ src: "https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-with-polyfills-latest.js" }],
-    },
-  },
-
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
@@ -44,7 +35,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       yandexClientID: process.env.YANDEX_CLIENT_ID,
-      yandexClientSecret: process.env.YANDEX_CLIENT_SECRET,
+      yandexClientRedirect: process.env.YANDEX_CLIENT_REDIRECT,
       url: "http://localhost:3000/",
       mdc: {
         useNuxtImage: true,
