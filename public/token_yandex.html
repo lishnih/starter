@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Token</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAALklEQVQokWO8cOE/AymAiSTVA6jBwIDRwIARqxQjdTyNx4YhE0rU1EClYB1QDQC77wl/1JpCogAAAABJRU5ErkJggg==">
+  <script src="https://yastatic.net/s3/passport-sdk/autofill/v1/sdk-suggest-token-with-polyfills-latest.js"></script>
+</head>
+<body>
+
+<!-- https://github.com/n3r4zzurr0/svg-spinners/blob/main/svg-css/clock.svg -->
+<div>
+  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .spinner_d9Sa{transform-origin:center}
+      .spinner_qQQY{animation:spinner_ZpfF 9s linear infinite}
+      .spinner_pote{animation:spinner_ZpfF .75s linear infinite}
+      @keyframes spinner_ZpfF{100%{transform:rotate(360deg)}}
+    </style>
+    <path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,12,21Z"/>
+    <rect class="spinner_d9Sa spinner_qQQY" x="11" y="6" rx="1" width="2" height="7"/>
+    <rect class="spinner_d9Sa spinner_pote" x="11" y="11" rx="1" width="2" height="9"/>
+  </svg>
+</div>
+
+<script>
+  window.YaSendSuggestToken(
+    window.origin,
+    {
+      flag: true
+    }
+  );
+  setTimeout(() => window.close(), 500);
+</script>
+
+</body>
+</html>

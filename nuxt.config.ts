@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     public: {
       yandexClientID: process.env.YANDEX_CLIENT_ID,
       yandexClientRedirect: process.env.YANDEX_CLIENT_REDIRECT,
-      url: "http://localhost:3000/",
+//    url: "http://localhost:3000/",
       mdc: {
         useNuxtImage: true,
       },
@@ -51,9 +51,9 @@ export default defineNuxtConfig({
     },
   },
 
-  site: {
-    url: "http://localhost:3000/",
-  },
+//site: {
+//  url: "http://localhost:3000/",
+//},
 
   compatibilityDate: "2024-11-10",
 });
