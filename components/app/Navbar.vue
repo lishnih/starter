@@ -24,7 +24,7 @@ const config = useAppConfig().header;
           </DisclosureButton>
         </div>
 
-        <div class="flex items-center max-sm:hidden ml-2 w-screen">
+        <div class="flex items-center max-sm:hidden m-2 w-screen">
           <div class="flex items-center space-x-2 mr-auto">
             Menu
           </div>

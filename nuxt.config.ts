@@ -34,9 +34,9 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      url: process.env.NUXT_PUBLIC_SITE_URL,
       yandexClientID: process.env.YANDEX_CLIENT_ID,
       yandexClientRedirect: process.env.YANDEX_CLIENT_REDIRECT,
-//    url: "http://localhost:3000/",
       mdc: {
         useNuxtImage: true,
       },

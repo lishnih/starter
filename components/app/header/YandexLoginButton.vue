@@ -44,14 +44,11 @@ const props = defineProps({
 });
 
 
-const YaAuthButtonActive = ref(true);
-
-
+const YaAuthButtonActive = ref(false);
 const runtimeConfig = useRuntimeConfig();
 
 if ( process.browser ) {
-
-//console.debug(runtimeConfig);
+  if ( process.dev ) console.debug(runtimeConfig.public);
 
   window.YaAuthSuggest
     .init(
@@ -74,6 +71,9 @@ if ( process.browser ) {
     )
     .then( res => {
 //    console.log(res);
+//       buttonStyle.value = "";
+      YaAuthButtonActive.value = true;
+
       res.handler()
         .then(data => {
 //        console.debug('Сообщение с токеном', data);
@@ -92,6 +92,6 @@ if ( process.browser ) {
 
 <template>
 
-  <div :id="parentId" class="flex" :class="[YaAuthButtonActive ? '' : 'hidden']" style="width: 44px; height: 44px;"></div>
+  <div :id="parentId" class="flex" :class="[YaAuthButtonActive ? '' : 'hidden']"></div>
 
 </template>

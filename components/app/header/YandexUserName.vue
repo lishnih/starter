@@ -12,7 +12,7 @@
     const access_token = useYaAuthAccessToken();
 //  console.debug(access_token.value);
 
-    console.debug(`access_token: ${access_token.value} / status: ${updateStatus.value}`);
+//  console.debug(`access_token: ${access_token.value} / status: ${updateStatus.value}`);
 
     if ( !access_token.value ) {
       updateStatus.value = 0;
