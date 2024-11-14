@@ -92,6 +92,6 @@ if ( process.browser ) {
 
 <template>
 
-  <div :id="parentId" class="flex" :class="[YaAuthButtonActive ? '' : 'hidden']"></div>
+  <div :id="parentId" class="flex" :class="[YaAuthButtonActive ? 'w-11' : 'hidden']" :style="buttonStyle"></div>
 
 </template>
