@@ -71,7 +71,7 @@ if ( process.browser ) {
     )
     .then( res => {
 //    console.log(res);
-//       buttonStyle.value = "";
+
       YaAuthButtonActive.value = true;
 
       res.handler()
@@ -85,13 +85,12 @@ if ( process.browser ) {
         })
         .catch(error => console.error('Обработка ошибки', error))
     });
-
 }
 
 </script>
 
 <template>
 
-  <div :id="parentId" class="flex" :class="[YaAuthButtonActive ? 'w-11' : 'hidden']" :style="buttonStyle"></div>
+  <div :id="parentId" class="flex" :class="[YaAuthButtonActive ? 'w-11' : 'hidden']"></div>
 
 </template>
