@@ -10,9 +10,7 @@
 
   const userName = computed(() => {
     const access_token = useYaAuthAccessToken();
-//  console.debug(access_token.value);
-
-//  console.debug(`access_token: ${access_token.value} / status: ${updateStatus.value}`);
+//  if ( process.dev ) console.debug(`access_token: ${access_token.value} / status: ${updateStatus.value}`);
 
     if ( !access_token.value ) {
       updateStatus.value = 0;
@@ -40,7 +38,7 @@
       },
       onResponse({ request, response, options }) {
         updateStatus.value = 2;
-//      console.log(response._data);
+//      console.debug(response._data);
 //      localStorage.setItem("token", response._data.token);
         userData.value = response._data;
       },
@@ -53,7 +51,7 @@
     return "Обновление данных...";
   });
 
-  const isDev = obj => process.dev;
+  const isDev = import.meta.dev;
 
 </script>
 

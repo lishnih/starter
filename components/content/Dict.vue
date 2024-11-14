@@ -78,7 +78,7 @@ const props = defineProps({
 })
 
 if ( props.level == 0 && process.browser && process.dev )
-  console.log(props.obj);
+  console.debug(props.obj);
 
 const obj = props.level == 0 ? decycle(props.obj) : props.obj;
 

@@ -70,16 +70,15 @@ if ( process.browser ) {
       }
     )
     .then( res => {
-//    console.log(res);
+//    if ( process.dev ) console.debug(res);
 
       YaAuthButtonActive.value = true;
 
       res.handler()
         .then(data => {
-//        console.debug('Сообщение с токеном', data);
+//        if ( process.dev ) console.debug('Сообщение с токеном', data);
 
           const YaAuthAccessTokenState = useState('YaAuthAccessToken', () => data.access_token);
-          console.debug('YaAuthAccessTokenState', YaAuthAccessTokenState);
 
           YaAuthButtonActive.value = false;
         })
