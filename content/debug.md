@@ -1,12 +1,12 @@
 ---
 title: Debug page
-description: Research Nuxt variables
+description: Research Nuxt environment
 layout: debug
 ---
 
-# Title
+# Заголовок
 
-Content
+Содержимое
 
 ---
 

@@ -29,13 +29,13 @@ function removeBanner() {
           }}</strong>
         <AppHeaderDot class="hidden sm:block" v-if="bannerConfig?.brandText" />
         {{ bannerConfig?.text }}
-        <Icon class="hidden sm:block w-5 h-5" name="tabler:arrow-right" />
+        <Icon class="hidden sm:block w-5 h-5" name="material-symbols:arrow-right-alt" />
       </a>
     </p>
     <div class="hidden sm:flex flex-1 justify-end items-center">
       <button @click="removeBanner" type="button" class="w-5 h-5">
         <span class="sr-only">Dismiss</span>
-        <Icon name="tabler:x" class="h-5 w-5 text-white" aria-hidden="true" />
+        <Icon name="material-symbols:close" class="h-5 w-5 text-white" aria-hidden="true" />
       </button>
     </div>
   </div>

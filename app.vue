@@ -18,8 +18,45 @@ const layoutName = computed(() => layout.value || 'default');
 
 <style>
 
+body {
+  --link-bg-color: darkblue;
+}
+
 .dark body {
+  --link-bg-color: lightblue;
   @apply bg-gray-800;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  @apply gap-2;
+}
+
+h1 {
+  font-weight: bold;
+  padding: 10px 16px 10px 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  @apply text-gray-800;
+  @apply bg-gray-100;
+}
+
+h1:before {
+  content: "⮚ ";
+}
+
+.dark h1 {
+  @apply text-gray-200;
+  @apply bg-gray-900;
+}
+
+.dark p {
+  @apply text-gray-300;
+}
+
+p {
+  margin: 16px;
 }
 
 @keyframes fadeInUp {

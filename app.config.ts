@@ -1,6 +1,6 @@
 export default defineAppConfig({
   general: {
-    title: "title",
+    title: "Page title",
     logo: "logo.png",
   },
   site: {
@@ -22,8 +22,8 @@ export default defineAppConfig({
   },
   ui: {
     icons: {
-      dark: "tabler:moon",
-      light: "tabler:sun",
+      dark: "material-symbols:dark-mode",
+      light: "material-symbols:light-mode",
     },
   },
 });

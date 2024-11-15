@@ -48,7 +48,7 @@ const YaAuthButtonActive = ref(false);
 const runtimeConfig = useRuntimeConfig();
 
 if ( process.browser ) {
-  if ( process.dev ) console.debug(runtimeConfig.public);
+//if ( process.dev ) console.debug(runtimeConfig.public);
 
   window.YaAuthSuggest
     .init(

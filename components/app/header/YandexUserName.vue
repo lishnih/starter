@@ -1,7 +1,6 @@
 <script setup lang="ts">
 
   import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-  import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
   const useYaAuthAccessToken = () => useState<string>("YaAuthAccessToken");
 
@@ -62,10 +61,10 @@
       <MenuButton
         class="inline-flex justify-center rounded-md bg-indigo-300 px-4 py-1 hover:bg-indigo-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
       >
-        {{ userName }}<ChevronDownIcon v-if="updateStatus"
-          class="-mr-2 ml-2 h-5 w-5 text-violet-200 hover:text-violet-100"
-          aria-hidden="true"
-        />
+        {{ userName }}<Icon aria-label="toggle dark mode"
+          name="material-symbols:arrow-drop-down"
+          class="-mr-2 ml-1 h-6 w-6 text-violet-200 hover:text-violet-100"
+          aria-hidden="true" />
       </MenuButton>
     </div>
 

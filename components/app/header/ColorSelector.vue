@@ -24,8 +24,8 @@ function toggleColorMode() {
   <button @click="toggleColorMode"
     class="flex justify-center items-center border rounded-full w-8 h-8 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-800 dark:border-gray-500 transition-all">
     <template v-if="loaded">
-      <Icon aria-label="toggle dark mode" v-if="colorMode.value === 'light'" :name="config?.dark ?? 'tabler:moon'" />
-      <Icon aria-label="toggle light mode" v-else :name="config?.light ?? 'tabler:sun'" />
+      <Icon aria-label="toggle dark mode" v-if="colorMode.value === 'light'" :name="config?.dark ?? 'material-symbols:dark-mode'" />
+      <Icon aria-label="toggle light mode" v-else :name="config?.light ?? 'material-symbols:light-mode'" />
     </template>
   </button>
 
