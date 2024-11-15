@@ -1,0 +1,1 @@
+[{"title":"О сервисе","_path":"/about"},{"title":"Источники данных","_path":"/db_types","children":[{"title":"Mongo DB","_path":"/db_types/mongodb"},{"title":"SQLite","_path":"/db_types/sqlite"}]},{"title":"Debug page","_path":"/debug","layout":"debug"},{"title":"Стартовая страница","_path":"/"},{"title":"Настройки","_path":"/settings"}]
