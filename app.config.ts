@@ -21,9 +21,9 @@ export default defineAppConfig({
     },
   },
   ui: {
-    icons: {
-      dark: "material-symbols:dark-mode",
-      light: "material-symbols:light-mode",
-    },
+//     icons: {
+//       dark: "material-symbols:dark-mode",
+//       light: "material-symbols:light-mode",
+//     },
   },
 });
